@@ -27,9 +27,12 @@ public class Main {
             }
             stack.push(i);
         }
+
+
         while (!stack.empty()) {
             answer[stack.pop()] = -1;
         }
+
 
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         for (int i = 0; i < n; i++) {
