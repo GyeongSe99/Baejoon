@@ -37,6 +37,7 @@ public class Main {
                     result[k] = i;
                     existed[i] = true;
                     dfs(k + 1);
+                    // 재귀함수가 끝나면 다시 원상태로 돌려주기
                     result[k] = 0;
                     existed[i] = false;
                 }
